@@ -1,0 +1,24 @@
+{
+  "name": "pozi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start --host 192.168.0.31"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "leaflet": "^1.6.0",
+    "next": "^9.4.4",
+    "next-images": "^1.4.0",
+    "next-pwa": "^2.5.0",
+    "next-routes": "^1.4.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-leaflet": "^2.7.0",
+    "styled-components": "^5.1.1"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mysql",
+  "host": "sq65ur5a5bj7flas.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  "port": 3306,
+  "username": "fjd7kaf07rf0o8ys",
+  "password": "vk63ur0qx0c25t6i",
+  "database": "py162vi80ae31vt2",
+  "synchronize": true,
+  "logging": false,
+  "entities": ["src/entity/**/*.ts"],
+  "migrations": ["src/migration/**/*.ts"],
+  "subscribers": ["src/subscriber/**/*.ts"],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}

@@ -1,0 +1,862 @@
+{
+  "settings": {
+    "languages": [
+      "pt"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp"
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "pt"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "pt": {
+        "settings": {
+          "locale": "pt",
+          "tag": "domain-manager-pt",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "trainByDomain": false,
+          "useStemDict": true
+        },
+        "stemDict": {
+          "oi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "oi,oii": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "oii": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "ola": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "opa": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "eai": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "fal": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "eaew": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "sair": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "flw": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "xauu": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "tchau": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "xauxau": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "tchauzinh": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "mais,te": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "que,sair,ter,vou": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "xau": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "cont,cri": {
+            "intent": "register.account",
+            "domain": "default"
+          },
+          "registr": {
+            "intent": "register.account",
+            "domain": "default"
+          },
+          "quer,registr": {
+            "intent": "register.account",
+            "domain": "default"
+          },
+          "cadastr,quer": {
+            "intent": "register.account",
+            "domain": "default"
+          },
+          "cadastr": {
+            "intent": "register.account",
+            "domain": "default"
+          },
+          "saud": {
+            "intent": "health.advice",
+            "domain": "default"
+          },
+          "de,dic,saud": {
+            "intent": "health.advice",
+            "domain": "default"
+          },
+          "sab,saud,sobr": {
+            "intent": "health.advice",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.hello": "default",
+          "greetings.bye": "default",
+          "register.account": "default",
+          "health.advice": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "oi",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "oii oi",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "oii",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "ola",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "olá",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "opa",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "eai",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "fala",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "eaew",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "sair",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "flw",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "xauu",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "tchau",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "xauxau",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "tchauzinho",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "te mais",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "vou ter que sair",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "xau",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "criar conta",
+            "intent": "register.account"
+          },
+          {
+            "domain": "default",
+            "utterance": "registrar",
+            "intent": "register.account"
+          },
+          {
+            "domain": "default",
+            "utterance": "registro",
+            "intent": "register.account"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero registrar",
+            "intent": "register.account"
+          },
+          {
+            "domain": "default",
+            "utterance": "quero cadastrar",
+            "intent": "register.account"
+          },
+          {
+            "domain": "default",
+            "utterance": "cadastro",
+            "intent": "register.account"
+          },
+          {
+            "domain": "default",
+            "utterance": "saúde",
+            "intent": "health.advice"
+          },
+          {
+            "domain": "default",
+            "utterance": "dica de saúde",
+            "intent": "health.advice"
+          },
+          {
+            "domain": "default",
+            "utterance": "saber sobre saúde",
+            "intent": "health.advice"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "pt",
+              "tag": "nlu-pt",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "oi": 1,
+              "oii": 1,
+              "ola": 1,
+              "opa": 1,
+              "eai": 1,
+              "fal": 1,
+              "eaew": 1,
+              "sair": 1,
+              "flw": 1,
+              "xauu": 1,
+              "tchau": 1,
+              "bye": 1,
+              "xauxau": 1,
+              "tchauzinh": 1,
+              "te": 1,
+              "mais": 1,
+              "vou": 1,
+              "ter": 1,
+              "que": 1,
+              "xau": 1,
+              "cri": 1,
+              "cont": 1,
+              "registr": 1,
+              "quer": 1,
+              "cadastr": 1,
+              "saud": 1,
+              "dic": 1,
+              "de": 1,
+              "sab": 1,
+              "sobr": 1
+            },
+            "intents": {
+              "greetings.hello": 1,
+              "greetings.bye": 1,
+              "register.account": 1,
+              "health.advice": 1
+            },
+            "intentFeatures": {
+              "greetings.hello": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+              ],
+              "greetings.bye": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12"
+              ],
+              "register.account": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "health.advice": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "sab",
+                "sobr",
+                "saud"
+              ]
+            },
+            "featuresToIntent": {
+              "0": [
+                "greetings.hello",
+                "greetings.bye",
+                "register.account",
+                "health.advice"
+              ],
+              "1": [
+                "greetings.hello",
+                "greetings.bye",
+                "register.account",
+                "health.advice"
+              ],
+              "2": [
+                "greetings.hello",
+                "greetings.bye",
+                "register.account",
+                "health.advice"
+              ],
+              "3": [
+                "greetings.hello",
+                "greetings.bye",
+                "register.account",
+                "health.advice"
+              ],
+              "4": [
+                "greetings.hello",
+                "greetings.bye",
+                "register.account",
+                "health.advice"
+              ],
+              "5": [
+                "greetings.hello",
+                "greetings.bye",
+                "health.advice"
+              ],
+              "6": [
+                "greetings.hello",
+                "greetings.bye",
+                "health.advice"
+              ],
+              "7": [
+                "greetings.bye",
+                "health.advice"
+              ],
+              "8": [
+                "greetings.bye",
+                "health.advice"
+              ],
+              "9": [
+                "greetings.bye",
+                "health.advice"
+              ],
+              "10": [
+                "greetings.bye",
+                "health.advice"
+              ],
+              "11": [
+                "greetings.bye"
+              ],
+              "12": [
+                "greetings.bye"
+              ],
+              "sab": [
+                "health.advice"
+              ],
+              "sobr": [
+                "health.advice"
+              ],
+              "saud": [
+                "health.advice"
+              ]
+            },
+            "neuralNetwork": {
+              "features": [
+                "oi",
+                "oii",
+                "ola",
+                "opa",
+                "eai",
+                "fal",
+                "eaew",
+                "sair",
+                "flw",
+                "xauu",
+                "tchau",
+                "bye",
+                "xauxau",
+                "tchauzinh",
+                "te",
+                "mais",
+                "vou",
+                "ter",
+                "que",
+                "xau",
+                "cri",
+                "cont",
+                "registr",
+                "quer",
+                "cadastr",
+                "saud",
+                "dic",
+                "de",
+                "sab",
+                "sobr",
+                "nonefeature"
+              ],
+              "intents": [
+                "greetings.hello",
+                "greetings.bye",
+                "register.account",
+                "health.advice",
+                "None"
+              ],
+              "perceptrons": [
+                [
+                  3.120335102081299,
+                  3.191643238067627,
+                  4.733300685882568,
+                  4.774469375610352,
+                  4.777695655822754,
+                  4.780925273895264,
+                  4.7841596603393555,
+                  -7.7126030921936035,
+                  -7.709362983703613,
+                  -7.706118583679199,
+                  -7.7028703689575195,
+                  -7.699618339538574,
+                  -7.696359634399414,
+                  -7.693096160888672,
+                  -3.8649728298187256,
+                  -3.8649728298187256,
+                  -0.4715304374694824,
+                  -0.4715304374694824,
+                  -0.4715304374694824,
+                  -7.688179016113281,
+                  -3.862525224685669,
+                  -3.862525224685669,
+                  -7.721588134765625,
+                  -1.2550585269927979,
+                  -7.67929744720459,
+                  -7.675220012664795,
+                  -0.5354939103126526,
+                  -0.5354939103126526,
+                  -0.502976655960083,
+                  -0.502976655960083,
+                  -7.6703362464904785,
+                  7.7440259320469575
+                ],
+                [
+                  -4.852574348449707,
+                  -4.852268695831299,
+                  -4.859077453613281,
+                  -4.852232933044434,
+                  -4.852232456207275,
+                  -4.852231979370117,
+                  -4.852231502532959,
+                  7.647759914398193,
+                  7.647767066955566,
+                  7.647767066955566,
+                  7.647767543792725,
+                  7.647762775421143,
+                  7.647759914398193,
+                  7.647759914398193,
+                  3.823880910873413,
+                  3.823880910873413,
+                  0.000001406131104886299,
+                  0.000001406131104886299,
+                  0.000001406131104886299,
+                  7.647759437561035,
+                  -2.539044141769409,
+                  -2.539044141769409,
+                  -5.061448574066162,
+                  -2.0077552795410156,
+                  -4.864880561828613,
+                  -4.863731861114502,
+                  -0.859927237033844,
+                  -0.859927237033844,
+                  -0.795546293258667,
+                  -0.795546293258667,
+                  -4.852751731872559,
+                  4.852236058520141
+                ],
+                [
+                  -1.512295126914978,
+                  -1.4745200872421265,
+                  -1.6080591678619385,
+                  -1.4062846899032593,
+                  -1.4062844514846802,
+                  -1.4062843322753906,
+                  -1.406284213066101,
+                  -1.406284213066101,
+                  -1.4062840938568115,
+                  -1.4062840938568115,
+                  -1.406283974647522,
+                  -1.406283974647522,
+                  -1.4062838554382324,
+                  -1.4062838554382324,
+                  -0.7031422257423401,
+                  -0.7031422257423401,
+                  -0.16612015664577484,
+                  -0.16612015664577484,
+                  -0.16612015664577484,
+                  -1.4062837362289429,
+                  5.5468597412109375,
+                  5.5468597412109375,
+                  11.093709945678711,
+                  0.000006836568900325801,
+                  11.093706130981445,
+                  -1.792852520942688,
+                  -0.48151278495788574,
+                  -0.48151278495788574,
+                  -0.429654061794281,
+                  -0.429654061794281,
+                  -1.4245052337646484,
+                  1.4062855458177683
+                ],
+                [
+                  -0.5916509032249451,
+                  -0.5753673315048218,
+                  -0.6167452931404114,
+                  -0.575367271900177,
+                  -0.5753672122955322,
+                  -0.5753671526908875,
+                  -0.5753670930862427,
+                  -0.5753670930862427,
+                  -0.5753670334815979,
+                  -0.5753670334815979,
+                  -0.5753670334815979,
+                  -0.5753669738769531,
+                  -0.5753669738769531,
+                  -0.5753669142723083,
+                  -0.2876836061477661,
+                  -0.2876836061477661,
+                  -0.07585154473781586,
+                  -0.07585154473781586,
+                  -0.07585154473781586,
+                  -0.5753668546676636,
+                  -0.2876835763454437,
+                  -0.2876835763454437,
+                  -0.5753670334815979,
+                  -0.17645445466041565,
+                  -0.5753667950630188,
+                  11.924622535705566,
+                  0.000004828630608244566,
+                  0.000004828630608244566,
+                  0.000004828599230677355,
+                  0.000004828599230677355,
+                  -0.5753661394119263,
+                  0.5753677895442545
+                ],
+                [
+                  -0.5922513008117676,
+                  -0.5867178440093994,
+                  -0.6187884211540222,
+                  -0.5749368667602539,
+                  -0.5731467604637146,
+                  -0.571896493434906,
+                  -0.5710751414299011,
+                  -0.5707840323448181,
+                  -0.5703279376029968,
+                  -0.5701836347579956,
+                  -0.5701276659965515,
+                  -0.5701135396957397,
+                  -0.570113480091095,
+                  -0.570113480091095,
+                  -0.2850583493709564,
+                  -0.2850583493709564,
+                  -0.05187186971306801,
+                  -0.05187186971306801,
+                  -0.05187186971306801,
+                  -0.5701134204864502,
+                  -0.28505685925483704,
+                  -0.28505685925483704,
+                  -0.5701135993003845,
+                  -0.15734560787677765,
+                  -0.5701133608818054,
+                  -0.5701133012771606,
+                  -0.0681048110127449,
+                  -0.0681048110127449,
+                  -0.06484939157962799,
+                  -0.06484939157962799,
+                  11.92988109588623,
+                  0.5701141411961312
+                ]
+              ],
+              "perceptronSettings": {
+                "locale": "pt",
+                "tag": "nlu-pt",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "pt",
+        "oi"
+      ],
+      [
+        "pt",
+        "oii oi"
+      ],
+      [
+        "pt",
+        "oii"
+      ],
+      [
+        "pt",
+        "ola"
+      ],
+      [
+        "pt",
+        "olá"
+      ],
+      [
+        "pt",
+        "opa"
+      ],
+      [
+        "pt",
+        "eai"
+      ],
+      [
+        "pt",
+        "fala"
+      ],
+      [
+        "pt",
+        "eaew"
+      ],
+      [
+        "pt",
+        "sair"
+      ],
+      [
+        "pt",
+        "flw"
+      ],
+      [
+        "pt",
+        "xauu"
+      ],
+      [
+        "pt",
+        "tchau"
+      ],
+      [
+        "pt",
+        "bye"
+      ],
+      [
+        "pt",
+        "xauxau"
+      ],
+      [
+        "pt",
+        "tchauzinho"
+      ],
+      [
+        "pt",
+        "te mais"
+      ],
+      [
+        "pt",
+        "vou ter que sair"
+      ],
+      [
+        "pt",
+        "xau"
+      ],
+      [
+        "pt",
+        "criar conta"
+      ],
+      [
+        "pt",
+        "registrar"
+      ],
+      [
+        "pt",
+        "registro"
+      ],
+      [
+        "pt",
+        "quero registrar"
+      ],
+      [
+        "pt",
+        "quero cadastrar"
+      ],
+      [
+        "pt",
+        "cadastro"
+      ],
+      [
+        "pt",
+        "saúde"
+      ],
+      [
+        "pt",
+        "dica de saúde"
+      ],
+      [
+        "pt",
+        "saber sobre saúde"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "pt": {
+        "greetings.hello": [
+          {
+            "answer": "Fala camarada! Já vou me introduzindo... Eu sou o Pozi, um robô feito pra ajudar na vida do caminhoneiro 🚛!Comigo tu consegue fazer de tudo:\n- Consigo *criar sua conta* na nossa plataforma 🚚 \n- Te ajudo a manter tua *saúde*, e nem precisa me agradecer! 🚑 🏥\n- Te passo os melhores lugares pra você ficar na estrada, shh não espalha!  🛏 🍔 🛀 \nEnfim, tou aqui pra o que tu precisar, precisou é só falar!"
+          }
+        ],
+        "greetings.bye": [
+          {
+            "answer": "Tudo bem, até mais! Eu tinha que recalibrar meus pneus mesmo..."
+          },
+          {
+            "answer": "Até mais! Vou aproveitar pra adiantar o meu lado aqui no tapetão 🚚"
+          }
+        ],
+        "register.account": [
+          {
+            "answer": "Você quer criar uma conta? Bom demais! Só precisa me dizer teu *nome*, aí eu vou agilizando as coisas por aqui."
+          },
+          {
+            "answer": "Vamo criar essa conta! Qual teu *nome*? Só me dizer que eu crio pra ontem!"
+          }
+        ],
+        "health.advice": [
+          {
+            "answer": "Rapaz, uma dica de saúde? Uma vez ouvi um médico famoso falar que beber dois litros d'água por dia faz bem pra saúde, mas eu sou um robô, tenho certeza que aquele picareta tava tentando me enganar 😤"
+          },
+          {
+            "answer": "Essa é fácil! Só comer de três em três horas... saco vazio não fica em pé. 🍲"
+          },
+          {
+            "answer": "Pra a gente que passa a vida nesse tapetão é difícil, mas sempre que der tira uma sonequinha! Eu não troco por nada."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

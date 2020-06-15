@@ -1,0 +1,83 @@
+import Document, { Head, Main, NextScript } from 'next/document'
+
+import { ServerStyleSheet } from 'styled-components'
+
+const APP_NAME = 'POZI'
+const APP_DESCRIPTION = 'Pesquise por estabelecimentos feitos para você caminhoneiro!'
+
+export default class extends Document {
+  static async getInitialProps(ctx) {
+    const sheet = new ServerStyleSheet()
+    const originalRenderPage = ctx.renderPage
+
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
+        })
+
+      const initialProps = await Document.getInitialProps(ctx)
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        ),
+      }
+    } finally {
+      sheet.seal()
+    }
+  }
+
+  render() {
+    return (
+      <html lang='en' dir='ltr'>
+        <Head>
+          <meta name='application-name' content={APP_NAME} />
+          <meta name='apple-mobile-web-app-capable' content='yes' />
+          <meta name='apple-mobile-web-app-status-bar-style' content='default' />
+          <meta name='apple-mobile-web-app-title' content={APP_NAME} />
+          <meta name='description' content={APP_DESCRIPTION} />
+          <meta name='format-detection' content='telephone=no' />
+          <meta name='mobile-web-app-capable' content='yes' />
+          <meta name='theme-color' content='#F5762A' />
+          <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' />
+
+          <link rel='apple-touch-icon' sizes='180x180' href='/icons/apple-touch-icon.png' />
+          <link rel='manifest' href='/manifest.json' />
+          <link rel='shortcut icon' href='/icons/favicon.ico' />
+
+          <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"></link>
+          <link 
+            rel="stylesheet" 
+            href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+            integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+            crossorigin=""
+          />
+
+          <style>{
+            `
+            html, body, #__next {
+              height: 100%;
+            }
+            #__next {
+              margin: 0 auto;
+            }
+            h1 {
+              text-align: center;
+            }
+            `
+          }</style>
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </html>
+    )
+  }
+}
