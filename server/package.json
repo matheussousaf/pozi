@@ -20,7 +20,7 @@
       "dotenv": "^8.2.0",
       "express": "^4.15.4",
       "helmet": "^3.22.0",
-      "jsonwebtoken": "^8.5.1",
+      "jsonwebtoken": "^9.0.0",
       "mysql": "^2.18.1",
       "node-nlp": "^4.4.0",
       "reflect-metadata": "^0.1.10",
